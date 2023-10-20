@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="/public/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/public/styles.css" />
     <title>Document</title>
   </head>
   <body>
@@ -16,37 +16,99 @@
       </div>
     </div>
     <div class="inroduce">
-      <div id="whoamitext">Кто я?</div>
       <div class="introduce-info">
         <div class="myname">
           <div id="FIO">
             Вахрушева <br />
             Полина Андреевна
           </div>
-          <img src="line-1.svg" alt="line1" id="line1" />
+          <img src="/public/line-1.svg" alt="line1" id="line1" />
           <div class="info">
             <div id="age">
               19
-              <div style="font-size: 28px">лет</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                лет
+              </div>
             </div>
             <div id="kurs">
               4
-              <div style="font-size: 28px">курс</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                курс
+              </div>
             </div>
             <div id="family">
               2-ой
-              <div style="font-size: 28px">ребёнок <br />в семье</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                ребёнок <br />в семье
+              </div>
             </div>
           </div>
         </div>
-        <div class="foto-slide">
-          <img src="arrow-1.svg" alt="arrow" id="arrow" />
-          <img src="rectangle-9.png" alt="me" />
-          <img src="arrow-2.svg" alt="arrow2" id="arrow" />
+        <div class="foto-slide fade">
+          <img
+            src="/public/arrow-2.svg"
+            alt="arrow"
+            id="arrow"
+            onclick="plusSlides(-1)"
+          />
+          <div class="mySlides">
+            <img src="/public/me_foto.jpg" alt="me" id="me" />
+          </div>
+          <div class="mySlides fade">
+            <img src="/public/me2.jpg" alt="me" id="me" />
+          </div>
+          <div class="mySlides fade">
+            <img src="/public/me3.jpg" alt="me" id="me" />
+          </div>
+          <img
+            src="/public/arrow-1.svg"
+            alt="arrow2"
+            id="arrow"
+            onclick="plusSlides(1)"
+          />
         </div>
       </div>
     </div>
-    <div class="story">
+    <form class="story" role="form" method="post">
       <div class="namestory">
         <h1 id="lifestory-text">История моей жизни</h1>
         <h2 id="facttext">Основные факты</h2>
@@ -62,9 +124,59 @@
           Учится по сей день. Вроде хорошо учится.
         </p>
       </div>
+    </form>
+    <div class="things">
+      <div class="namestory">
+        <h1 id="lifestory-text">Чем я занимаюсь?</h1>
+      </div>
+      <div class="hobbi">
+        <div class="video">
+          <img src="/public/ikon.png" alt="Видео" id="ikon" />
+          <h1 id="ikon-text">Видео</h1>
+        </div>
+        <div class="photograf">
+          <img src="/public/ikon-2.png" alt="Фото" id="ikon" />
+          <h1 id="ikon-text">Фото</h1>
+        </div>
+        <div class="game">
+          <img src="/public/ikon-3.png" alt="Игры" id="ikon" />
+          <h1 id="ikon-text">Игры</h1>
+        </div>
+        <div class="volontee">
+          <img src="/public/ikon-4.png" alt="Волонтёрство" id="ikon" />
+          <h1 id="ikon-text">Волонтер</h1>
+        </div>
+      </div>
     </div>
-    <div class="things"></div>
-    <div class="footer"></div>
-    <script src="main.js"></script>
+    <div class="footer">
+      <div class="namestory">
+        <h1 id="lifestory-text">Я тебе подхожу?</h1>
+        <h2 id="facttext">Напиши мне и не забудь оставить свою почту</h2>
+      </div>
+      <div class="sendme">
+        <input type="text" id="number" placeholder="Адрес почты..." />
+        <textarea
+          id="maintext"
+          name="massege"
+          rows="8"
+          cols="33"
+          placeholder="Сообщение..."
+          style="resize: none"
+        ></textarea>
+      </div>
+      <div class="finedme">
+        <h1>Найди меня в соцсетях:</h1>
+        <div class="tg">
+          <img src="/public/ikon-6.png" alt="Телеграмм" id="ikoncon" />
+          <h1 style="margin-top: 0.5vh">@jinamy</h1>
+        </div>
+        <div class="whatsapp">
+          <img src="/public/ikon-5.png" alt="WhatsApp" id="ikoncon" />
+          <h1 style="margin-top: 0.5vh">8(982)8147005</h1>
+        </div>
+      </div>
+      <button id="send" type="submit" onclick="SendMess()">Отправить</button>
+    </div>
+    <script src="/public/main.js"></script>
   </body>
 </html>
