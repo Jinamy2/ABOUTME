@@ -16,7 +16,6 @@
       </div>
     </div>
     <div class="inroduce">
-      <div id="whoamitext">Кто я?</div>
       <div class="introduce-info">
         <div class="myname">
           <div id="FIO">
@@ -27,22 +26,85 @@
           <div class="info">
             <div id="age">
               19
-              <div style="font-size: 28px">лет</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                лет
+              </div>
             </div>
             <div id="kurs">
               4
-              <div style="font-size: 28px">курс</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                курс
+              </div>
             </div>
             <div id="family">
               2-ой
-              <div style="font-size: 28px">ребёнок <br />в семье</div>
+              <div
+                style="font-size: 10pt"
+                ;
+                @media
+                screen
+                and
+                (min-width:
+                450px)
+                and
+                (max-width:
+                650px)
+                {font-size:
+                8pt}
+              >
+                ребёнок <br />в семье
+              </div>
             </div>
           </div>
         </div>
-        <div class="foto-slide">
-          <img src="arrow-1.svg" alt="arrow" id="arrow" />
-          <img src="rectangle-9.png" alt="me" />
-          <img src="arrow-2.svg" alt="arrow2" id="arrow" />
+        <div class="foto-slide fade">
+          <img
+            src="arrow-2.svg"
+            alt="arrow"
+            id="arrow"
+            onclick="plusSlides(-1)"
+          />
+          <div class="mySlides">
+            <img src="me_foto.jpg" alt="me" id="me" />
+          </div>
+          <div class="mySlides fade">
+            <img src="me2.jpg" alt="me" id="me" />
+          </div>
+          <div class="mySlides fade">
+            <img src="me3.jpg" alt="me" id="me" />
+          </div>
+          <img
+            src="arrow-1.svg"
+            alt="arrow2"
+            id="arrow"
+            onclick="plusSlides(1)"
+          />
         </div>
       </div>
     </div>
@@ -63,8 +125,60 @@
         </p>
       </div>
     </div>
-    <div class="things"></div>
-    <div class="footer"></div>
+    <div class="things">
+      <div class="namestory">
+        <h1 id="lifestory-text">Чем я занимаюсь?</h1>
+      </div>
+      <div class="hobbi">
+        <div class="video">
+          <img src="ikon.png" alt="Видео" id="ikon" />
+          <h1 id="ikon-text">Видео</h1>
+        </div>
+        <div class="photograf">
+          <img src="ikon-2.png" alt="Фото" id="ikon" />
+          <h1 id="ikon-text">Фото</h1>
+        </div>
+        <div class="game">
+          <img src="ikon-3.png" alt="Игры" id="ikon" />
+          <h1 id="ikon-text">Игры</h1>
+        </div>
+        <div class="volontee">
+          <img src="ikon-4.png" alt="Волонтёрство" id="ikon" />
+          <h1 id="ikon-text">Волонтер</h1>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="namestory">
+        <h1 id="lifestory-text">Я тебе подхожу?</h1>
+        <h2 id="facttext">
+          Напиши мне и не забудь оставить свой номер телефона
+        </h2>
+      </div>
+      <div class="sendme">
+        <input type="text" id="number" placeholder="Номер телефона..." />
+        <textarea
+          id="maintext"
+          name="massege"
+          rows="8"
+          cols="33"
+          placeholder="Сообщение..."
+          style="resize: none"
+        ></textarea>
+      </div>
+      <div class="finedme">
+        <h1>Найди меня в соцсетях:</h1>
+        <div class="tg">
+          <img src="ikon-6.png" alt="Телеграмм" id="ikoncon" />
+          <h1 style="margin-top: 0.5vh">@jinamy</h1>
+        </div>
+        <div class="whatsapp">
+          <img src="ikon-5.png" alt="WhatsApp" id="ikoncon" />
+          <h1 style="margin-top: 0.5vh">8(982)8147005</h1>
+        </div>
+      </div>
+      <button id="send">Отправить</button>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

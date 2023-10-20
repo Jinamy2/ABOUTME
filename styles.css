@@ -1,67 +1,65 @@
 body {
   overflow: auto;
-  height: 5000px;
+  height: fit-content;
 }
 .whyme {
-  width: 100%;
-  height: 15%;
+  width: fit-content;
+  height: fi;
   background-color: white;
   text-align: center;
   color: #5e0d1c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #whymetext {
-  padding-top: 20%;
+  padding-top: 15%;
   display: inline-block;
   vertical-align: middle;
-  font-size: 64px;
+  font-size: 40pt;
   font-style: normal;
   font-weight: 700;
 }
 #visitext {
+  padding-bottom: 20%;
   display: inline-block;
   vertical-align: middle;
-  font-size: 36px;
+  font-size: 25pt;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 .inroduce {
   width: 100%;
-  height: 16%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  height: fit-content;
   background-color: #5e0d1c;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#whoamitext {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 6vw;
-  padding-top: 5vw;
-  line-height: normal;
-}
 .introduce-info {
-  margin: 2vw 6vw 6vw 6vw;
-  width: 87%;
-  height: 75vh;
+  margin: 2vh 0 0 3vw;
+  width: fit-content;
+  height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15vw;
 }
 .myname {
-  width: 42%;
-  height: 56vh;
+  width: 35vw;
+  height: fit-content;
 }
 .foto-slide {
-  width: 49%;
-  height: 72vh;
-  margin-left: 8vw;
+  position: relative;
   display: flex;
   flex-direction: row;
-  gap: 2vw;
+  gap: 3vw;
+}
+#me {
+  width: 30vw;
+  height: 40vw;
+  border-radius: 5vw;
 }
 #FIO {
-  font-size: 48px;
+  font-size: 30pt;
   font-style: normal;
   font-weight: 700;
   line-height: 110.5%;
@@ -80,47 +78,74 @@ body {
 #age,
 #kurs,
 #family {
-  font-size: 48px;
+  font-size: 20pt;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 #arrow {
-  width: 10%;
+  width: 3vw;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .story {
   width: 100%;
-  height: 16%;
+  height: fit-content;
   background-color: white;
   color: #5e0d1c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 .namestory {
   text-align: center;
-  padding-top: 5vh;
 }
 #lifestory-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 28px;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 700;
 }
 #facttext {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   margin-top: 2vh;
 }
 .text2 {
+  padding: 5vw;
   width: 72vw;
-  height: 58vh;
+  height: fit-content;
   border-radius: 20px;
   background: rgba(243, 0, 45, 0.14);
   margin-left: 13vw;
   margin-right: 13vw;
   margin-top: 10vh;
-  display: flex;
+  margin-bottom: 5vh;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -128,23 +153,551 @@ body {
   color: #000;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 24px;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: 209.188%;
   letter-spacing: -0.64px;
 }
 .things {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   width: 100%;
-  height: 16%;
+  height: fit-content;
   background-color: #5e0d1c;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer {
+  padding-top: 8vw;
+  padding-bottom: 8vw;
   width: 100%;
-  height: 10%;
+  height: fit-content;
   background-color: white;
   color: #5e0d1c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hobbi {
+  display: flex;
+  gap: 11vw;
+  margin: 14vw 4vw 14vw 4vw;
+}
+#ikon {
+  width: 15vw;
+}
+#ikon-text {
+  color: #ffffff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 209.188%;
+  letter-spacing: -0.64px;
+  margin-top: 5vh;
+}
+.video,
+.photograf,
+.game,
+.volontee {
+  text-align: center;
+}
+.sendme {
+  width: 80vw;
+  height: fit-content;
+  margin: 10vh 10vw 0 10vw;
+  display: flex;
+}
+#number {
+  width: 30vw;
+  height: 7vh;
+  border-radius: 20px;
+  background: rgba(243, 0, 45, 0.14);
+  padding: 1.5vw;
+  font-size: 10pt;
+}
+#maintext {
+  margin-left: 8vw;
+  width: 40vw;
+  height: 30vh;
+  border-radius: 20px;
+  background: rgba(243, 0, 45, 0.14);
+  padding: 1.5vw;
+  text-align: start;
+  font-size: 10pt;
+}
+
+#maintext::placeholder,
+#number::placeholder {
+  font-size: 1vw;
+}
+.tg,
+.whatsapp {
+  display: flex;
+  gap: 1.5vw;
+}
+.finedme {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-left: 10vw;
+  margin-top: -15vh;
+  font-size: 1.2vw;
+}
+#ikoncon {
+  width: 2vw;
+  height: 2vw;
+}
+#send {
+  border-radius: 45px;
+  background: #5e0d1c;
+  width: 10vw;
+  height: 5vh;
+  color: #ffffff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 209.188%;
+  letter-spacing: -0.64px;
+  margin: 5vh 10vw 0 78vw;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5e0d1c;
+}
+::-webkit-scrollbar-track {
+  background-color: #5e0d1c4f;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #000000;
+}
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+  #whymetext {
+    padding-top: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #visitext {
+    padding-bottom: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: 400;
+  }
+  #FIO {
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.5%;
+  }
+  #age,
+  #kurs,
+  #family {
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #lifestory-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #facttext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1vh;
+  }
+  #storytext {
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+  }
+  #ikon-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+    margin-top: 30px;
+  }
+  #maintext::placeholder,
+  #number::placeholder {
+    font-size: 8pt;
+  }
+  .finedme {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 10vw;
+    margin-top: -130px;
+    font-size: 10pt;
+  }
+  .text2 {
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background: rgba(243, 0, 45, 0.14);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 30pt;
+    margin-bottom: 50pt;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sendme {
+    width: 80vw;
+    height: fit-content;
+    margin: 25px 10vw 10px 10vw;
+    display: flex;
+  }
+  #number {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding: 1.5vw;
+    font-size: 10pt;
+  }
+  #maintext {
+    margin-left: 8vw;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding: 1.5vw;
+    text-align: start;
+    font-size: 12pt;
+  }
+  #send {
+    border-radius: 10px;
+    background: #5e0d1c;
+    width: 80px;
+    height: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+    margin: 50px 0px 30px 70vw;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 790px) {
+  body {
+    overflow: auto;
+    overflow-y: hidden;
+    height: fit-content;
+  }
+  #whymetext {
+    padding-top: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #visitext {
+    padding-bottom: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: 400;
+  }
+  #FIO {
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.5%;
+  }
+  #age,
+  #kurs,
+  #family {
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #lifestory-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #facttext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 2vh;
+  }
+  #storytext {
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+  }
+  #ikon-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+    margin-top: 30px;
+  }
+  #maintext::placeholder,
+  #number::placeholder {
+    font-size: 10pt;
+  }
+  #number {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding: 1.5vw;
+    font-size: 10pt;
+  }
+  #maintext {
+    margin-left: 8vw;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding: 1.5vw;
+    text-align: start;
+    font-size: 10pt;
+  }
+  .finedme {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 90px;
+    margin-top: -130px;
+    font-size: 12pt;
+  }
+  .finedme {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10vw;
+    margin-top: -60px;
+    font-size: 12pt;
+  }
+  .sendme {
+    width: 80vw;
+    height: fit-content;
+    margin: 25px 0vw 10px 10vw;
+    display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  #whymetext {
+    padding-top: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #visitext {
+    padding-bottom: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 6pt;
+    font-style: normal;
+    font-weight: 400;
+  }
+  #FIO {
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.5%;
+  }
+  #age,
+  #kurs,
+  #family {
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #lifestory-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 700;
+  }
+  #facttext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1vh;
+  }
+  #storytext {
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+  }
+  #ikon-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+    margin-top: 30px;
+  }
+  #maintext::placeholder,
+  #number::placeholder {
+    font-size: 4pt;
+  }
+  .finedme {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 65vw;
+    margin-top: -100px;
+    font-size: 5pt;
+  }
+  .text2 {
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background: rgba(243, 0, 45, 0.14);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 30pt;
+    margin-bottom: 50pt;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sendme {
+    width: 80vw;
+    height: fit-content;
+    margin: 15px 0vw 10px 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #number {
+    width: 80px;
+    height: 15px;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding-bottom: 5px;
+    font-size: 5pt;
+  }
+  #maintext {
+    width: 50vw;
+    height: 100px;
+    margin-top: 3vw;
+    border-radius: 10px;
+    background: rgba(243, 0, 45, 0.14);
+    padding: 1.5vw;
+    text-align: start;
+    margin-left: 0px;
+    font-size: 5pt;
+  }
+  #send {
+    border-radius: 10px;
+    background: #5e0d1c;
+    width: 50px;
+    height: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209.188%;
+    letter-spacing: -0.64px;
+    margin: 70px 0px 30px 10vw;
+  }
+  .tg,
+  .whatsapp {
+    display: flex;
+    gap: 10px;
+  }
+  #ikoncon {
+    width: 10px;
+    height: 10px;
+  }
+  .hobbi {
+    display: flex;
+    flex-direction: column;
+    gap: 11vw;
+    margin: 14vw 4vw 14vw 4vw;
+  }
+  #ikon {
+    width: 30vw;
+  }
+  ::-webkit-scrollbar {
+    width: 3vw;
+  }
+  .introduce-info {
+    margin: 2vh 0 0 3vw;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15vw;
+  }
+  .myname {
+    width: 100%;
+    height: fit-content;
+  }
+  #me {
+    width: 65vw;
+    height: 90vw;
+    border-radius: 5vw;
+  }
+  #arrow {
+    width: 8vw;
+    cursor: pointer;
+    transition: 0.6s ease;
+  }
+  .foto-slide {
+    margin-left: 5vw;
+  }
 }
